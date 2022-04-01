@@ -1,6 +1,6 @@
 {
     "name": "geekson-ui",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Clean UI developped by Geekson Software",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
