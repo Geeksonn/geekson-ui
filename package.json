@@ -1,0 +1,30 @@
+{
+    "name": "geekson-ui",
+    "version": "1.0.0",
+    "description": "Clean UI developped by Geekson Software",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "rollup": "rollup -c"
+    },
+    "keywords": [
+        "geekson",
+        "ui",
+        "react"
+    ],
+    "author": "Olivier Sputael",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/preset-react": "^7.16.7",
+        "@rollup/plugin-babel": "^5.3.1",
+        "@rollup/plugin-commonjs": "^21.0.3",
+        "@rollup/plugin-node-resolve": "^13.1.3",
+        "babel": "^6.23.0",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "rollup": "^2.70.1"
+    }
+}
