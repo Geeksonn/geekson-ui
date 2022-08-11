@@ -7,7 +7,7 @@ export interface GroupButtonProps {
     clickHandler: () => {};
 }
 
-const Button = (props: GroupButtonProps) => {
+const GroupButton = (props: GroupButtonProps) => {
     return (
         <div className='buttonWrapper'>
             {props.labels.map((label, index) => {
@@ -22,4 +22,4 @@ const Button = (props: GroupButtonProps) => {
     );
 };
 
-export default Button;
+export default GroupButton;
