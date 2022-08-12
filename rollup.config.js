@@ -20,13 +20,20 @@ export default [
                 format: 'esm',
                 sourcemap: true,
             },
+            {
+                file: 'example/src/reactComponentLib/index.js',
+                format: 'es',
+                banner: '/* eslint-disable */',
+            },
         ],
         plugins: [resolve(), commonjs(), typescript({ tsconfig: './tsconfig.json' }), postcss()],
-    },
+    },/*
     {
         input: 'dist/esm/types/index.d.ts',
-        output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+        output: [
+            { file: 'dist/index.d.ts', format: 'esm' },
+        ],
         plugins: [dts()],
         external: [/\.css$/],
-    },
+    },*/
 ];
