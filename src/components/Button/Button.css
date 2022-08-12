@@ -1,0 +1,22 @@
+.button {
+    @apply px-6 py-1 rounded-lg mx-auto mt-8 text-sm;
+    @apply border border-neutral-200 hover:bg-neutral-100;
+}
+
+/*
+.green {
+    @apply border border-green-700 text-green-700 hover:bg-green-50;
+}
+
+.teal {
+    @apply border border-teal-700 text-teal-700 hover:bg-teal-50;
+}
+
+.red {
+    @apply border border-red-700 text-red-700 hover:bg-red-50;
+}
+
+.neutral {
+    @apply border border-neutral-700 text-neutral-700 hover:bg-neutral-50;
+}
+*/

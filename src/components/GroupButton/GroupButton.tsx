@@ -33,7 +33,7 @@ const GroupButton = (props: GroupButtonProps) => {
     return (
         <div id='btnWrapper' className={'buttonWrapper ' + props.className}>
             {props.labels.map((label, index) => {
-                const buttonClass = index === 0 ? 'button active' : 'button';
+                const buttonClass = index === 0 ? 'groupButton active' : 'groupButton';
                 return (
                     <button key={'btn#' + index} className={buttonClass} onClick={handleClick}>
                         {label}
