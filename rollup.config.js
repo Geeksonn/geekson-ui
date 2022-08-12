@@ -26,13 +26,25 @@ export default [
                 banner: '/* eslint-disable */',
             },
         ],
-        plugins: [resolve(), commonjs(), typescript({ tsconfig: './tsconfig.json' }), postcss()],
+        plugins: [
+            resolve(),
+            commonjs(),
+            typescript({ tsconfig: './tsconfig.json' }),
+            postcss({
+                config: {
+                    path: './postcss.config.js',
+                },
+                extensions: ['.css'],
+                minimize: true,
+                inject: {
+                    insertAt: 'top',
+                },
+            }),
+        ],
     },
     {
         input: 'dist/esm/types/index.d.ts',
-        output: [
-            { file: 'dist/index.d.ts', format: 'esm' },
-        ],
+        output: [{ file: 'dist/index.d.ts', format: 'esm' }],
         plugins: [dts()],
         external: [/\.css$/],
     },
