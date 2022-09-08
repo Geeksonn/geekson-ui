@@ -3,3 +3,10 @@
     height: 100vh;
     padding: 20px;
 }
+
+.elementWrapper {
+    border: solid 1px #9d9b9b;
+    padding: 10px;
+    display: flex;
+    margin-top: 10px;
+}

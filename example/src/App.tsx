@@ -12,13 +12,15 @@ const App = () => {
                     labels={['Catégories', 'Articles', 'Demandes']}
                     clickHandler={(label: string) => console.log('clicked on: ' + label)}
                 />
-                <br />
-                <Button label='My Button' />
-                <br />
-                <Button label='My Very Long Button' />
-                {/*['green', 'teal', 'red', 'neutral'].map((accent, index) => {
-                    return <Button key={index} label='My Button' accent={accent} />;
-                })*/}
+                <div className='elementWrapper'>
+                    <Button label='Default' />
+                    {['green', 'teal', 'red', 'blue', 'neutral'].map((accent, index) => {
+                        return <Button key={index} label={accent} accent={accent} />;
+                    })}
+                </div>
+                <div className='elementWrapper'>
+                    <Button label='My Very Long Button' />
+                </div>
             </>
         </div>
     );

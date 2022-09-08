@@ -4,15 +4,16 @@ import './Button.css';
 
 export interface ButtonProps {
     label: string;
-    //accent: string;
+    accent?: string;
+    className?: string;
 }
 
-const accents = ['green', 'teal', 'red', 'neutral'];
+const accents = ['green', 'teal', 'red', 'blue', 'neutral'];
 
 const Button = (props: ButtonProps) => {
-    //const accentClass = accents.includes(props.accent) ? props.accent : 'neutral';
+    const accentClass = props.accent ? (accents.includes(props.accent) ? props.accent : 'neutral') : 'neutral';
 
-    return <button className={'button '}>{props.label}</button>;
+    return <button className={`button ${accentClass} ${props.className}`}>{props.label}</button>;
 };
 
 export default Button;
