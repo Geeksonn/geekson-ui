@@ -5,6 +5,9 @@ import { Button, GroupButton } from './reactComponentLib';
 import './App.css';
 
 const App = () => {
+    const clickHandler = () => {
+        console.log('Clicked in function');
+    };
     return (
         <div className='contentWrapper'>
             <>
@@ -19,7 +22,7 @@ const App = () => {
                     })}
                 </div>
                 <div className='elementWrapper'>
-                    <Button label='My Very Long Button' />
+                    <Button label='My Very Long Button' clickHandler={clickHandler} />
                 </div>
             </>
         </div>

@@ -2,7 +2,7 @@
 import './Button.css';
 export interface ButtonProps {
     label: string;
-    onclick: () => {};
+    clickHandler: () => {};
     accent?: string;
     className?: string;
 }
