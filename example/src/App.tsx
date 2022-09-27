@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, GroupButton } from './reactComponentLib';
+import { Button, GroupButton, Spinner } from './reactComponentLib';
 
 import './App.css';
 
@@ -23,6 +23,13 @@ const App = () => {
                 </div>
                 <div className='elementWrapper'>
                     <Button label='My Very Long Button' clickHandler={clickHandler} />
+                </div>
+                <div className='elementWrapper'>
+                    <Spinner />
+                    <Spinner color='red' />
+                    <Spinner color='blue' />
+                    <Spinner color='green' />
+                    <Spinner color='neutral' />
                 </div>
             </>
         </div>
