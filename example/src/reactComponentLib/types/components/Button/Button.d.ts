@@ -1,6 +1,7 @@
 /// <reference types="react" />
 import './Button.css';
 export interface ButtonProps {
+    id?: string;
     label: string;
     clickHandler: () => {};
     accent?: string;

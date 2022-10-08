@@ -22,7 +22,7 @@ const App = () => {
                     })}
                 </div>
                 <div className='elementWrapper'>
-                    <Button label='My Very Long Button' clickHandler={clickHandler} />
+                    <Button id='myBtn' label='My Very Long Button' clickHandler={clickHandler} />
                 </div>
                 <div className='elementWrapper'>
                     <Spinner />
